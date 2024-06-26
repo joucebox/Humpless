@@ -58,6 +58,12 @@ Ensure all tests pass with ```dune test```.
  - Approach: Utilizes both black box and glass box testing methodologies.
     - **Table.ml**: Tests creation, loaders, exception handling, sorting, setters, and filtering functionalities.
     - **Task.ml**: Tests setters, getters, creator, input validity, edge cases (e.g., invalid times or dates), and exception handling.
+### Integration Testing
+- ```Integration_test.ml```: Located in the tests folder, automatically runs with dune test, performing integration testing on the Table module.
+  - **Operations**: Executes multiple chained table operations to test the module's functionality.
+  - **Validation**: The OUnit test passes if no exceptions are raised, providing a basic level of validation.
+  - **Output Inspection**: Prints outputs, facilitating manual inspection to verify correctness.
+
 ### Demonstration of Correctness
 - **Comprehensive Testing**: The test suite thoroughly covers the Table and Task modules, ensuring expected behavior.
 - **Scenarios and Edge Cases**: Tests various scenarios and edge cases, including invalid inputs and exceptions.
